@@ -696,7 +696,7 @@ class Temperature {
 
         static bool wait_for_chamber(const bool no_wait_for_cooling=true);
       #endif
-    #endif
+    #endif // HAS_TEMP_CHAMBER
 
     #if WATCH_CHAMBER
       static void start_watching_chamber();
@@ -715,7 +715,7 @@ class Temperature {
         ;
         start_watching_chamber();
       }
-    #endif
+    #endif // HAS_HEATED_CHAMBER
 
     /**
      * The software PWM power for a heater
